@@ -1,0 +1,80 @@
+/*reset base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*variaveis css*/
+:root{
+    --colorFont1:#f1f1f1;
+    --bgColor1:#ccc;
+    --colorDark:#333;
+    --colorFont2:yellow;
+    --gradient:linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.3))
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: transparent;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+nav ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--colorFont1);
+    font-weight: 900;
+    transition: color .5s;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+a:hover{
+    color: var(--colorFont2);
+}
+.inicio{
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rex;
+    background-image: var(--gradient),url(../assets/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--colorFont1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    font-size: 3rem;
+    position: relative;
+}
+span{
+    color: var(--colorFont2);
+    margin-left: 10px;
+}
+.menu-header{
+    display: flex;
+    gap:2rem
+}
+.hamburger{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    /* display: none; */
+}
+#titulo{
+    font-size: 2.2rem;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
