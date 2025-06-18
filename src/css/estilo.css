@@ -71,6 +71,15 @@ span{
     z-index: 2;
     display: none;
 }
+.barra{
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background: var(--colorFont1);
+    margin: .5rem auto;
+    border-radius: 1px;
+    transition: .5s;
+}
 #titulo{
     font-size: 2.2rem;
     margin: 10%;
